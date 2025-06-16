@@ -1,0 +1,70 @@
+/* Reset & Base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* //nav */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .btn-signin {
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* //hero text */
+  .hero {
+    text-align: center;
+    margin-top: 150px;
+  }
+  
+  .main-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .sub-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  /* //email form */
+  .email-form {
+    margin-top: 20px;
+  }
+  
+  .email-form input {
+    padding: 12px;
+    width: 300px;
+    max-width: 80%;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .btn-get-started {
+    padding: 12px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
