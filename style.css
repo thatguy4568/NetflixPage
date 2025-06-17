@@ -68,3 +68,120 @@ body {
     border-radius: 4px;
   }
   
+  /* Trending */
+.trending {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .trending-grid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .trending-img {
+    width: 150px;
+    border-radius: 5px;
+  }
+  
+  /* FAQ */
+  .faq {
+    padding: 40px;
+    background-color: #111;
+    color: white;
+  }
+  
+  .faq h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .faq-item {
+    background: #333;
+    margin: 10px auto;
+    padding: 15px;
+    width: 80%;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  /* Bottom signup */
+  .bottom-signup {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #000;
+    color: #777;
+    padding: 40px;
+    font-size: 14px;
+  }
+  
+  .footer a {
+    color: #777;
+    text-decoration: none;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-lang {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .disclaimer {
+    text-align: center;
+    color: #777;
+  }
+  .hero {
+    min-height: 80vh;
+    padding-top: 100px;
+  }
+  
+  .trending {
+    min-height: 70vh;
+  }
+  
+  .faq {
+    min-height: 
+    70vh;
+  }
+  
+  .bottom-signup {
+    min-height: 40vh;
+  }
+  
+  .footer {
+    min-height: 50vh;
+  }
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .trending-img {
+    margin-bottom: 20px;
+  }
+  
+  
