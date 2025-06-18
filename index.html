@@ -9,42 +9,159 @@
 </head>
 <body>
 
-<!-- //top nav section -->
-  <header class="nav">
-    <img src="images/netflix-logo.png" alt="Netflix Logo" class="logo">
-    <button class="btn-signin">Sign In</button>
-  </header>
-    <!-- //hero section -->
-    <section class="hero">
-        <h1 class="main-title">Unlimited movies, TV shows, and more</h1>
-        <h2 class="sub-title">Starts at $7.99. Cancel anytime.</h2>
-        <p>Ready to watch? Enter your email to create or restart your membership.</p>
-        
-        <!-- //sign-up form -->
-        <form class="email-form">
-          <input type="email" placeholder="Email address" required>
-          <button type="submit" class="btn-get-started">Get Started</button>
-        </form>
-      </section>
-    
-      <!-- //script connection -->
-      <script src="script.js"></script>
-    </body>
-    </html>
-    <!-- //Trending Now -->
-<section class="trending">
+  <!-- Video Background -->
+  <video autoplay="autoplay" loop="loop">
+    <source src="nxrc.mp4" type="video/mp4" />
+  </video>
+
+
+  <!-- Black Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Netflix Logo on Left Side -->
+  <img src="netflixlogo.png" alt="Netflix Logo" class="netflix-logo-left" />
+
+  <div class="top-right-buttons">
+   <select class="language-selector">
+    <option value="en">English</option>
+    <option value="es">Español</option>
+   </select>
+    <button class="sign-in-button">Sign In</button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1>Unlimited movies, TV shows, and more</h1>
+    <p>Starts at $7.99. Cancel anytime.</p>
+    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+
+    <form class="email-form">
+      <input type="email" placeholder="Email address" required>
+      <button type="submit" class="btn-get-started">Get Started</button>
+    </form>
+
+    <div class="only-netflix">
+      <img src="onlyonnetflix.gif" alt="Only on Netflix" height="100" />
+    </div>
+  </div>
+
+ <div class="promo-banner">
+  <img src="popcorn.jpg" alt="Popcorn" class="popcorn-icon" />
+  <div class="promo-text">
+    <h3>The Netflix you love for just $7.99.</h3>
+    <p>Get our most affordable, ad-supported plan.</p>
+  </div>
+  <div class="promo-action">
+    <button type="button" class="learn-more-button">Learn More</button>
+  </div>
+</div>
+
+  <!-- Trending Now Section -->
+  <section class="trending">
     <h2>Trending Now</h2>
     <div class="trending-grid">
-      <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZ9QI426KBUk6w5NQg8knYnOFuAhPAHLXNtNVIQeej4ygJxAxkXUzqyXx1g_osrQJUaEI" alt="Trending 1" class="trending-img">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNAD0Em_u5l3Us1smDSPFL69xF3hlCBahQ4g&s" alt="Trending 2" class="trending-img">
-      <img src="https://m.media-amazon.com/images/M/MV5BMjE4NDc5MDU2NV5BMl5BanBnXkFtZTgwNDI1ODEyNTM@._V1_.jpg" alt="Trending 3" class="trending-img">
-      <img src="https://m.media-amazon.com/images/M/MV5BNTZlYzdjMzgtYjU2ZC00MGQ5LWFiMDYtOTIwNzQ0M2MyNmU2XkEyXkFqcGc@._V1_.jpg" alt="Trending 4" class="trending-img">
-      <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p34622_p_v8_at.jpg" alt="Trending 5" class="trending-img">
-      <img src="https://m.media-amazon.com/images/M/MV5BMTg2NjJiODctM2IyMS00MmQ5LWI1YmQtNTBjMTI4M2U2YzA5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Trending 6" class="trending-img">
+
+      <div class="trending-item">
+        <span class="trending-rank">1</span>
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZ9QI426KBUk6w5NQg8knYnOFuAhPAHLXNtNVIQeej4ygJxAxkXUzqyXx1g_osrQJUaEI" alt="Trending 1" class="trending-img">
+      </div>
+
+      <div class="trending-item">
+        <span class="trending-rank">2</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNAD0Em_u5l3Us1smDSPFL69xF3hlCBahQ4g&s" alt="Trending 2" class="trending-img">
+      </div>
+
+      <div class="trending-item">
+        <span class="trending-rank">3</span>
+        <img src="https://m.media-amazon.com/images/M/MV5BMjE4NDc5MDU2NV5BMl5BanBnXkFtZTgwNDI1ODEyNTM@._V1_.jpg" alt="Trending 3" class="trending-img">
+      </div>
+
+      <div class="trending-item">
+        <span class="trending-rank">4</span>
+        <img src="https://m.media-amazon.com/images/M/MV5BNTZlYzdjMzgtYjU2ZC00MGQ5LWFiMDYtOTIwNzQ0M2MyNmU2XkEyXkFqcGc@._V1_.jpg" alt="Trending 4" class="trending-img">
+      </div>
+
+      <div class="trending-item">
+        <span class="trending-rank">5</span>
+        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p34622_p_v8_at.jpg" alt="Trending 5" class="trending-img">
+      </div>
+
+      <div class="trending-item">
+        <span class="trending-rank">6</span>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTg2NjJiODctM2IyMS00MmQ5LWI1YmQtNTBjMTI4M2U2YzA5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Trending 6" class="trending-img">
+      </div>
+
+      <div class="trending-item">
+        <span class="trending-rank">7</span>
+        <img src="thelifelist.jpeg" alt="The Life List" class="trending-img">
+      </div>
+
+      <div class="trending-item">
+        <span class="trending-rank">8</span>
+        <img src="histhreedaughters.jpeg" alt="His Three Daughters" class="trending-img">
+      </div>
+
+      <div class="trending-item">
+        <span class="trending-rank">9</span>
+        <img src="robpeace.jpeg" alt="Rob Peace" class="trending-img">
+      </div>
+
+      <div class="trending-item">
+        <span class="trending-rank">10</span>
+        <img src="pedroparamo.jpeg" alt="Pedro Paramo" class="trending-img">
+      </div>
+
+      <div class="trending-item">
+        <span class="trending-rank">11</span>
+        <img src="royals.jpeg" alt="Royals" class="trending-img">
+      </div>
+
+      <div class="trending-item">
+        <span class="trending-rank">12</span>
+        <img src="reallylove.jpeg" alt="Really Love" class="trending-img">
+      </div>
+
+      <div class="trending-item">
+        <span class="trending-rank">13</span>
+        <img src="oneday.jpeg" alt="One Day" class="trending-img">
+      </div>
+
+      <div class="trending-item">
+        <span class="trending-rank">14</span>
+        <img src="beautifullove.jpeg" alt="Beautiful Love" class="trending-img">
+      </div>
+
     </div>
   </section>
-  
-  <!-- //FAQ Section -->
+
+<!-- More Reasons to Join Section -->
+  <section class="reasons">
+    <h2>More Reasons to Join</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Enjoy on your TV</h3>
+        <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        <img src="tv.jpg" alt="TV Icon" />
+      </div>
+      <div class="card">
+        <h3>Download your shows to watch offline</h3>
+        <p>Save your favorites easily and always have something to watch.</p>
+        <img src="download.jpg" alt="Download Icon" />
+      </div>
+      <div class="card">
+        <h3>Watch everywhere</h3>
+        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        <img src="device.png" alt="Device Icon" />
+      </div>
+      <div class="card">
+        <h3>Create profiles for kids</h3>
+        <p>Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
+        <img src="kids.png" alt="Kids Icon" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
   <section class="faq">
     <h2>Frequently Asked Questions</h2>
     <div class="faq-item">What is Netflix? <span>+</span></div>
@@ -54,8 +171,8 @@
     <div class="faq-item">What can I watch on Netflix? <span>+</span></div>
     <div class="faq-item">Is Netflix good for kids? <span>+</span></div>
   </section>
-  
-  <!-- //Bottom email signup -->
+
+  <!-- Bottom Signup Section -->
   <section class="bottom-signup">
     <p>Ready to watch? Enter your email to create or restart your membership.</p>
     <form class="email-form">
@@ -63,8 +180,8 @@
       <button type="submit" class="btn-get-started">Get Started</button>
     </form>
   </section>
-  
-  <!-- //Footer Section -->
+
+  <!-- Footer -->
   <footer class="footer">
     <p>Questions? Call <a href="#">1-844-505-2993</a></p>
     <div class="footer-links">
@@ -105,4 +222,6 @@
     </div>
     <p class="disclaimer">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a></p>
   </footer>
-  
+
+</body>
+</html>

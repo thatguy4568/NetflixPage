@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* Video Background */
+   /* Background Video */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    /* Black Overlay */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.65);
+      z-index: -1;
+    }
+
+    /* Netflix N Logo */
+    .n-logo {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 40px;
+      z-index: 3;
+    }
+
+    /* Center Content */
+    .content {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 1;
+      padding: 0 20px;
+    }
+
+    .netflix-logo {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .content h1 {
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+
+    .content p {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+
+    .interface {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .interface input {
+      padding: 1em;
+      width: 300px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .interface button {
+      padding: 1em 2em;
+      background-color: red;
+      border: none;
+      color: white;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .only-netflix {
+      position: absolute;
+      bottom: 50px;
+      font-size: 1.2em;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 0.5em 1em;
+      border-radius: 5px;
+    }
+
+    /* More Reasons to Join Section */
+    .reasons {
+      padding: 60px 20px;
+      background-color: black;
+      text-align: center;
+    }
+
+    .reasons h2 {
+      font-size: 2em;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: linear-gradient(135deg, #1a1a2e, #161625);
+      border-radius: 20px;
+      padding: 20px;
+      width: 250px;
+      max-width: 90%;
+      color: white;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .card h3 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95em;
+      line-height: 1.4;
+      margin-bottom: 15px;
+    }
+
+    .card img {
+      width: 40px;
+      align-self: flex-end;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video Background -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="nxrc.mp4" type="video mp4">
+  </video>
+
+  <!-- Black Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Netflix N Logo -->
+  <img src="N.png" alt="Netflix N" class="n-logo" />
+
+  <!-- Main Content -->
+  <div class="content">
+    <img src="netflixlogo.png" alt="Netflix Logo" class="netflix-logo" />
+    <h1>Unlimited movies, TV shows, and more</h1>
+    <p>Starts at $7.99. Cancel anytime.</p>
+
+    <div class="interface">
+      <input type="email" placeholder="Email address" />
+      <button>Get Started</button>
+    </div>
+
+    <div class="only-netflix">
+      <img src="onlyonnetflix.gif" alt="Only on Netflix" height="100" />
+    </div>
+  </div>
+
+  <!-- More Reasons to Join Section -->
+  <section class="reasons">
+    <h2>More Reasons to Join</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Enjoy on your TV</h3>
+        <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        <img src="tv.jpg" alt="TV Icon" />
+      </div>
+      <div class="card">
+        <h3>Download your shows to watch offline</h3>
+        <p>Save your favorites easily and always have something to watch.</p>
+        <img src="download.jpg" alt="Download Icon" />
+      </div>
+      <div class="card">
+        <h3>Watch everywhere</h3>
+        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        <img src="device.png" alt="Device Icon" />
+      </div>
+      <div class="card">
+        <h3>Create profiles for kids</h3>
+        <p>Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
+        <img src="kids.png" alt="Kids Icon" />
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
